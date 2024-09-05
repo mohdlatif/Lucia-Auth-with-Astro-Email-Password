@@ -43,7 +43,7 @@ export async function POST(context: APIContext): Promise<Response> {
 		memoryCost: 19456,
 		timeCost: 2,
 		outputLen: 32,
-		// salt: Buffer.from('Salt123456', 'utf-8'),
+		salt: Buffer.from('Salt123456', 'utf-8'),
 		parallelism: 1
 	});
 	const userId = generateId(15);
